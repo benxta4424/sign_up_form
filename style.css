@@ -94,3 +94,28 @@ a {
     font-size: smaller;
     font-family: 'kaushan_scriptregular';
 }
+
+.logo_and_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+
+  width: 100%;
+  height: 18%;
+  text-align: center;
+
+  background-color: rgba(233, 167, 167, 0.1);
+}
+
+#horse_logo {
+  mix-blend-mode: multiply;
+  height: 100%; 
+}
+
+.logo_name {
+  color: white;
+  font-size:xx-large;
+  font-family: 'kaushan_scriptregular';
+}
