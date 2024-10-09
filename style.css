@@ -50,6 +50,18 @@
   #root, #__next {
     isolation: isolate;
   }
+
+/*custom fonts*/
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('./custom_fonts/webfontkit-20241009-175423/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('./custom_fonts/webfontkit-20241009-175423/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .container {
     position:relative;
     display: flex;
@@ -58,8 +70,31 @@
     width: 100vw;
     border: 2px solid black;
 }
-
-img {
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+#side-image {
+    position:relative;
     height:100%;
     width:100%;
+}
+.credits-container {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+}
+.credits {
+    /*positioning*/
+    position: fixed;
+    top:97%;
+    left:14%;
+
+    /*color*/
+    color:white;
+    font-style: oblique;
+    font-size: smaller;
+    font-family: 'kaushan_scriptregular';
 }
