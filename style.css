@@ -99,7 +99,7 @@ a {
     /*color*/
     color:white;
     font-style: oblique;
-    font-size: calc(0.4rem + 0.5vw);
+    font-size: max(30%,0.9vw);
     font-family: 'kaushan_scriptregular';
 }
 
@@ -143,8 +143,6 @@ a {
   justify-content: center;
   align-items: center;
 
-  min-width: 50%;
-  max-width: 80%;
   position: relative;
   overflow: scroll;
   
@@ -153,17 +151,17 @@ a {
 .title {
   position: absolute;
   display: flex;
-  top:10%;
-  height: 5%;
-
-  box-sizing: border-box;
-  max-width:50%;
-  
-  text-overflow: ellipsis;
+  font-family: 'kaushan_scriptregular';
   text-align: center;
   white-space: wrap;
-  font-size: xx-large;
 
+  font-size: max(50%,1.5vw);
+  top:10%;
+  height: max(font-size%,2vw);
+  max-width:50%;
+
+  background: #f2f2f2;
+  box-shadow: 20px 10px 20px #C4A484;
 }
 .form {
   border: 3px solid black;
