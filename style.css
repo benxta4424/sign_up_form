@@ -68,7 +68,16 @@
   }
 }
 
-
+legend,
+fieldset,
+select,
+textarea,
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .container {
     position:relative;
     display: flex;
@@ -144,9 +153,7 @@ a {
   align-items: center;
 
   position: relative;
-  overflow: scroll;
-  
-  border: 3px solid black;
+  overflow: auto;
 }
 .title {
   position: absolute;
@@ -155,14 +162,35 @@ a {
   text-align: center;
   white-space: wrap;
 
-  font-size: max(50%,1.5vw);
-  top:10%;
+  font-size: max(30%,1.5vw);
+  top:5%;
   height: max(font-size%,2vw);
-  max-width:50%;
-
-  background: #f2f2f2;
   box-shadow: 20px 10px 20px #C4A484;
 }
 .form {
-  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: auto;
+
+  width: 100%;
+  height: max(40%,2vh);
+  font-size: max(50%,1.2vw);
+  box-shadow: 15px 15px 15px #dcdcdc;
+
+  position: relative;
+  gap: 3rem;
+
+}
+.names, .mail_tel, .pas_cpas{
+  gap: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+input {
+  border-radius: 8px;
+  border: 1px solid red;
 }
