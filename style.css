@@ -177,7 +177,7 @@ a {
   width: 100%;
   height: max(40%,2vh);
   font-size: max(50%,1.2vw);
-  box-shadow: 15px 15px 15px #dcdcdc;
+  box-shadow: 15px 15px 10px #dcdcdc;
 
   position: relative;
   gap: 3rem;
@@ -189,6 +189,34 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   
+}
+.submit_button {
+  position: absolute;
+  height: 20%;
+  bottom: 1%;
+  left: 10%;
+
+  font-size: max(40%,2vw);
+}
+.submit {
+  border-radius: 30px;
+  border: 1px solid #5f9ea0;
+  background-color: #1e90ff;
+  color: whitesmoke;
+  box-shadow: 1px 15px 70px #1e90ff;
+}
+.submit:hover {
+  color: black;
+  background-color: chocolate;
+  box-shadow: 1px 15px 70px chocolate;
+}
+.bottom_text {
+  position: inherit;
+  height: 20%;
+  top: 30%;
+  right: 30%;
+  font-size: max(10%,0.8vw);
+  font-family: monospace;
 }
 input {
   border-radius: 8px;
