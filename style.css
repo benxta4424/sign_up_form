@@ -143,7 +143,7 @@ a {
   
   color: white;
   font-family: 'kaushan_scriptregular';
-  font-size: max(30%,2vw);  
+  font-size: max(30%,1.8vw);  
 }
 .form_container {
   display: flex;
