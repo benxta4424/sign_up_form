@@ -22,32 +22,35 @@
             <form class="form">
                 <div class="names">
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="first_name">
+                    <input type="text" id="fname" name="first_name" minlength="5" maxlength="20" placeholder="Jackson.." required>
                 
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="last_name">
+                    <input type="text" id="lname" name="last_name" minlength="5" maxlength="20" required>
                 </div>
 
                 <div class="mail_tel">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="pnumber">Phone Number</label>
-                    <input type="tel" id="pnumber" name="phone_number">
+                    <input type="tel" id="pnumber" name="phone_number" required>
                 </div>
                 
                 <div class="pas_cpas">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
 
                     <label for="cpassword">Confirm Password</label>
-                    <input type="password" name="cpassword" id="cpassword">
+                    <input type="password" name="cpassword" id="cpassword" required>
+                </div>
+
+                <div type="submit" class="submit_button">
+                    <button type="submit" class="submit">Create Account</button>
                 </div>
             </form>
-            <div class="submit_button">
-                <button class="submit">Create Account</button>
-            </div>
-            <div class="bottom_text">Already have an account? <a href="">Log IN</a></div>
+            
+            <div class="bottom_text">Already have an account? <a href="" data-tool-tip="Sign IN">Log IN</a></div>
+
         </div>
     </div>
 </body>

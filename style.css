@@ -153,7 +153,7 @@ a {
   align-items: center;
 
   position: relative;
-  overflow: auto;
+  overflow: none;
 }
 .title {
   position: absolute;
@@ -179,7 +179,8 @@ a {
   font-size: max(50%,1.2vw);
   box-shadow: 15px 15px 10px #dcdcdc;
 
-  position: relative;
+  position: absolute;
+  top: 25%;
   gap: 3rem;
 
 }
@@ -194,13 +195,13 @@ a {
   position: absolute;
   height: 20%;
   bottom: 1%;
-  left: 10%;
+  right: 2%;
 
-  font-size: max(40%,2vw);
+  font-size: max(40%,1.5vw);
 }
 .submit {
   border-radius: 30px;
-  border: 1px solid #5f9ea0;
+  border: 1px solid #1c3464;
   background-color: #1e90ff;
   color: whitesmoke;
   box-shadow: 1px 15px 70px #1e90ff;
@@ -208,17 +209,59 @@ a {
 .submit:hover {
   color: black;
   background-color: chocolate;
+  border: 2px solid #01084f;
   box-shadow: 1px 15px 70px chocolate;
 }
 .bottom_text {
   position: inherit;
-  height: 20%;
-  top: 30%;
+  top: 40%;
+  bottom: 20%;
   right: 30%;
   font-size: max(10%,0.8vw);
   font-family: monospace;
 }
+.logg {
+  position: absolute;
+  width: 10%;
+  bottom: 15%;
+  left: 10%;
+}
+
+a[data-tool-tip] {
+  color:red;
+  position: relative;
+}
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  width: 50px;
+  bottom: 0;
+  left: 10%;
+  padding: 0.2rem;
+  
+
+  background-color: rgb(67, 76, 201);
+  color:aliceblue;
+  text-align: center;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
+}
 input {
   border-radius: 8px;
+  border: 1px solid  blue;
+}
+input:focus {
+  background-color: darkturquoise;
+  color: black;
+}
+input:invalid {
   border: 1px solid red;
 }
