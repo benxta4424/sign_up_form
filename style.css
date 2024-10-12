@@ -217,7 +217,7 @@ a {
   top: 40%;
   bottom: 20%;
   right: 30%;
-  font-size: max(10%,0.8vw);
+  font-size: max(10%,1vw);
   font-family: monospace;
 }
 .logg {
@@ -236,7 +236,7 @@ a[data-tool-tip]::after {
   display: block;
   position: absolute;
   border-radius: 10px;
-  width: 50px;
+  width: 70px;
   bottom: 0;
   left: 10%;
   padding: 0.2rem;
@@ -246,6 +246,8 @@ a[data-tool-tip]::after {
   color:aliceblue;
   text-align: center;
   white-space: nowrap;
+  box-shadow: 30px 30px 40px rgb(89, 65, 196);
+
   transform: scale(0);
   transition: transform ease-out 150ms, bottom ease-out 150ms;
 }
@@ -254,13 +256,20 @@ a[data-tool-tip]:hover::after {
   transform: scale(1);
   bottom: 100%;
 }
+
+
 input {
   border-radius: 8px;
   border: 1px solid  blue;
 }
-input:focus {
-  background-color: darkturquoise;
-  color: black;
+input:valid {
+  background-color:  rgb(198, 245, 167);
+  border: 2px solid rgb(118, 202, 70);
+}
+
+input:focus:invalid {
+  background-color:  rgb(247, 207, 207);
+  border: 2px solid rgb(253, 98, 98);
 }
 input:invalid {
   border: 1px solid red;
