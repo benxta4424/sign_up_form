@@ -5,3 +5,5 @@ I didnt implement the same optimizations for the form as well in case the user n
 A cool feature added as well, when the Log IN button is hovered, another button is appearing.
 The creation of the hovered button is done with the pseudo-element 'after'.
 We create the button with after and use 'transform(0)' to hide it and use 'transform(1)' when hovered in order to show it. 
+Quick preview:
+https://github.com/user-attachments/assets/16b057e5-0a8f-4b96-8f28-3a1952f5c2b3
